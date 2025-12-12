@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eco Action Survey - EcoLife</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-leaf"></i> ECO LIFE
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="tips.html">Tips</a></li>
+                    <li><a href="recycle.html">Recycle</a></li>
+                    <li><a href="survey.html" class="active">Survey</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="content-section">
+            <h1 class="section-title">Eco Action Survey</h1>
+            <p>Help us understand eco-friendly practices in our community. Your responses will help us create better resources and programs. All responses are anonymous.</p>
+            
+            <form class="survey-form" action="#" method="POST">
+                <!-- Personal Information -->
+                <div class="form-group">
+                    <label for="name">Full Name (Optional):</label>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address (Optional):</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email">
+                </div>
+                
+                <!-- Recycling Habits -->
+                <div class="form-group">
+                    <label>How often do you recycle?</label>
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="recycle_frequency" value="daily" required> Daily
+                        </label>
+                        <label>
+                            <input type="radio" name="recycle_frequency" value="weekly"> Weekly
+                        </label>
+                        <label>
+                            <input type="radio" name="recycle_frequency" value="monthly"> Monthly
+                        </label>
+                        <label>
+                            <input type="radio" name="recycle_frequency" value="rarely"> Rarely
+                        </label>
+                        <label>
+                            <input type="radio" name="recycle_frequency" value="never"> Never
+                        </label>
+                    </div>
+                </div>
+                
+                <!-- Eco Practices -->
+                <div class="form-group">
+                    <label>Which eco-friendly practices do you follow? (Select all that apply)</label>
+                    <div class="checkbox-group">
+                        <label>
+                            <input type="checkbox" name="practices" value="reduce_plastic"> Reduce plastic use
+                        </label>
+                        <label>
+                            <input type="checkbox" name="practices" value="compost"> Compost food waste
+                        </label>
+                        <label>
+                            <input type="checkbox" name="practices" value="save_water"> Save water
+                        </label>
+                        <label>
+                            <input type="checkbox" name="practices" value="renewables"> Use renewable energy
+                        </label>
+                        <label>
+                            <input type="checkbox" name="practices" value="public_transport"> Use public transport
+                        </label>
+                        <label>
+                            <input type="checkbox" name="practices" value="local_food"> Buy local food
+                        </label>
+                        <label>
+                            <input type="checkbox" name="practices" value="energy_efficient"> Use energy-efficient appliances
+                        </label>
+                        <label>
+                            <input type="checkbox" name="practices" value="plant_based"> Eat plant-based meals
+                        </label>
+                    </div>
+                </div>
+                
+                <!-- Location -->
+                <div class="form-group">
+                    <label for="location">Your Location:</label>
+                    <select id="location" name="location" class="form-control" required>
+                        <option value="" disabled selected>Select your city</option>
+                        <option value="colombo">Colombo</option>
+                        <option value="kandy">Kandy</option>
+                        <option value="galle">Galle</option>
+                        <option value="jaffna">Jaffna</option>
+                        <option value="kurunegala">Kurunegala</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <!-- Age Group -->
+                <div class="form-group">
+                    <label for="age">Age Group:</label>
+                    <select id="age" name="age" class="form-control" required>
+                        <option value="" disabled selected>Select age group</option>
+                        <option value="under18">Under 18</option>
+                        <option value="18-25">18-25</option>
+                        <option value="26-35">26-35</option>
+                        <option value="36-50">36-50</option>
+                        <option value="over50">Over 50</option>
+                    </select>
+                </div>
+                
+                <!-- Comments -->
+                <div class="form-group">
+                    <label for="comments">Additional Comments or Suggestions:</label>
+                    <textarea id="comments" name="comments" class="form-control" rows="5" placeholder="Share your thoughts, suggestions, or challenges you face in practicing sustainability..."></textarea>
+                </div>
+                
+                <!-- Submit Button -->
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-paper-plane"></i> Submit Survey
+                </button>
+            </form>
+            
+            <div style="margin-top: 2rem; padding: 1rem; background-color: #e8f5e8; border-radius: 8px;">
+                <h3><i class="fas fa-info-circle"></i> Survey Information</h3>
+                <p>This survey should take approximately 3-5 minutes to complete. Your responses will help us:</p>
+                <ul style="margin-left: 1.5rem;">
+                    <li>Understand community sustainability practices</li>
+                    <li>Develop targeted educational materials</li>
+                    <li>Identify areas where more support is needed</li>
+                    <li>Measure the impact of our initiatives</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="copyright">
+                <p>&copy; 2025 EcoLife Sustainable Living. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
